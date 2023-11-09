@@ -3,8 +3,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
-WEBHOOK_URL = os.getenv("WEBHOOK_URL")
-WEB_SERVER_HOST= os.getenv("WEB_SERVER_HOST")
+WEBHOOK_URL = os.getenv("WEBHOOK_URL")  # https://example.railway.app/webhook
+WEB_SERVER_HOST= os.getenv("WEB_SERVER_HOST")  # 0.0.0.0
 WEB_SERVER_PORT= os.getenv("WEB_SERVER_PORT")
 WEBHOOK_PATH = os.getenv("WEBHOOK_PATH")
 WEBHOOK_SECRET = os.getenv("WEBHOOK_SECRET")
