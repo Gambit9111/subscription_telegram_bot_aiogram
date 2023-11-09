@@ -42,7 +42,7 @@ async def on_startup(bot: Bot) -> None:
     print(bot_info)
     print("\n")
     print(webhook_info)
-    print("\n")
+    
     
 def main() -> None:
     # Dispatcher is a root router
@@ -71,7 +71,7 @@ def main() -> None:
     setup_application(app, dp, bot=bot)
 
     # And finally start webserver
-    web.run_app(app, host=WEB_SERVER_HOST, port=WEB_SERVER_PORT)
+    web.run_app(app, host=WEB_SERVER_HOST)
 
 
 if __name__ == "__main__":
