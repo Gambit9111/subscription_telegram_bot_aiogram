@@ -39,6 +39,7 @@ async def on_startup(bot: Bot) -> None:
     webhook_info = await bot.get_webhook_info()
     print("**************__Initializing the bot__**************\n")
     print("**************__Bot info__**************\n")
+    await bot.send_message(chat_id=5768539850, text="Bot is starting")
     print(bot_info)
     print("\n")
     print(webhook_info)
@@ -70,7 +71,7 @@ def main() -> None:
     setup_application(app, dp, bot=bot)
 
     # And finally start webserver
-    web.run_app(app, host="0.0.0.0", port="80")
+    web.run_app(app, host=WEB_SERVER_HOST, port="3000")
 
 
 if __name__ == "__main__":
